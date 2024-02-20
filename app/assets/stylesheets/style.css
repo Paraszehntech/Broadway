@@ -32,9 +32,7 @@ form {
     float:right;
   }
   body {
-    background: #70e1f5;
-    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  
-    background: linear-gradient(to right, #ffd194, #70e1f5);
+   background-color: lightgray !important;
     min-height: 100vh;
     display: flex;
   flex-direction: column;
@@ -44,12 +42,12 @@ form {
     flex: 1;
   }
   footer {
-    background-color: white;
+    background-color: lightsteelblue;
     text-align: center;
-    color: #f9532d;
+    color: white
   }
   footer a {
-    color: #f9532d;
+    color:white;
   }
   #play_category_id{
     width: 100%;
@@ -215,4 +213,11 @@ form {
     .play-info .play-director, .play-info .play-desc {
       font-size: 0.9em; /* Adjust font size for readability on mobile */
     }
+  }
+  .container-fluid{
+    padding: 10px;
+   
+    background-color:lightsteelblue;
+    color: #333333; 
+	font-weight: bold;
   }
