@@ -1,0 +1,16 @@
+<% if params[:category].present? %>
+    <h1 class='text-center mt-2 mb-2'><%= params[:category] %></h1>
+<% else %>
+    <h2 class="text-center mt-2 mb-2">All Play's</h2>
+<% end %>
+<% if @plays.count == 0 %>
+    <h3>There are no  plays in this category yet.</h3>
+<% else %>
+    <div class="row">
+    <% @plays.each do |play| %>
+    <div class="col-md-3 mx-auto">
+        <%= link_to(image_tag(play.main_image, class: "play"),play_path(play)) %>
+    </div>
+    <% end %>
+    </div>
+<% end %>
